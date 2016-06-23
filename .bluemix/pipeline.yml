@@ -27,7 +27,7 @@ stages:
       application: smsss
     script: |-
       #!/bin/bash
-      cf push "${CF_APP}"
+      cf push --random-route "${CF_APP}"
 
       # View logs
       #cf logs "${CF_APP}" --recent
