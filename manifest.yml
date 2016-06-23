@@ -2,7 +2,6 @@ applications:
 - path: .
   memory: 32M
   instances: 1
-  domain: bmx.alkalay.net
   name: smsss
   host: smsss
   disk_quota: 1024M
