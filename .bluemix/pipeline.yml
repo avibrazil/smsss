@@ -21,10 +21,10 @@ stages:
   - name: Deploy to dev
     type: deployer
     target:
-      url: https://api.ng.bluemix.net
-      organization: Default Bluemix
-      space: prod
-      application: smsss
+        url: ${CF_TARGET_URL}
+        organization: ${CF_ORGANIZATION}
+        space: ${CF_SPACE}
+        application: smsss
     script: |-
       #!/bin/bash
       cf push --random-route "${CF_APP}"
