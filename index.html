@@ -52,7 +52,7 @@
 
 			$('#alert').remove();
 			
-			$.get('http://localhost/~aviram/prematuros/', data, function(responseText, status) {
+			$.get('http://serasa-nodered.mybluemix.net/enviasms', data, function(responseText, status) {
 				if (status === 'success') {
 					$('<div class="alert alert-success" role="alert" id="alert"></div>').insertBefore('#send');
 					$('#alert').html("SMS enviado com sucesso");
