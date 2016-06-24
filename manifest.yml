@@ -5,4 +5,4 @@ applications:
   name: smsss
   host: smsss
   disk_quota: 1024M
-  buildpack: php
+  buildpack: php_buildpack
